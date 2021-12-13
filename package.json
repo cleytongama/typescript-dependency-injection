@@ -1,0 +1,25 @@
+{
+  "name": "poc-mmfx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tsc:init": "tsc --init",
+    "tsc:build": "tsc",
+    "test": "tsc && jest ./dist --forceExit",
+    "main:problem": "tsc && node ./dist/problem/main.js",
+    "main:abstract-factory": "tsc && node ./dist/abstract-factory/main.js",
+    "main:intersect": "tsc  && node ./dist/intersection-types/main.js",
+    "main:type-utilities": "tsc  && node ./dist/type-utilities/main.js",
+    "test:coverage": "tsc && jest ./dist --coverage --forceExit"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2"
+  }
+}
